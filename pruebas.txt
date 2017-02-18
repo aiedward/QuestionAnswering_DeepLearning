@@ -1,0 +1,25 @@
+Reading CSV file...
+SENTENCE_START in your scenario, a person could just not run the mandatory background check on the buyer and still sell the gun to the felon. SENTENCE_END
+SENTENCE_START there's no way to enforce it. SENTENCE_END
+SENTENCE_START an honest seller is going to not sell the gun to them when they see they're a felon on the background check. SENTENCE_END
+SENTENCE_START a dishonest seller isn't going to run the check in the first place. SENTENCE_END
+SENTENCE_START no one is going to be honest enough to run the check, see they're a felon, and then all of a sudden immediately turn dishonest and say "nah, you know what, here's your gun anyway." SENTENCE_END
+SENTENCE_START they wouldn't run the fucking check in the first place, genius. SENTENCE_END
+SENTENCE_START your bullshit proposal is **not enforceable**. SENTENCE_END
+SENTENCE_START this is why people without 
+
+&gt;here's an idea, why not make a background check system where it would be illegal to sell guns to felons? SENTENCE_END
+SENTENCE_START that doesn't convince you? SENTENCE_END
+SENTENCE_START idgaf. SENTENCE_END
+SENTENCE_START we already fucking have that. SENTENCE_END
+SENTENCE_START what aren't you understanding about this?! SENTENCE_END
+SENTENCE_START it's just currently not available to private sellers. SENTENCE_END
+SENTENCE_START i'd like to make it available, but there's no point in making it mandatory. SENTENCE_END
+SENTENCE_START &gt;you're just supporting it to make a gesture towards background check reform in bad faith. SENTENCE_END
+SENTENCE_START as a gun owner who has harmed no one and has constitutionally protected rights, i actually don't own the anti-gun side a damn thing. SENTENCE_END
+SENTENCE_START it's people like you that convince me to not give an inch at all. SENTENCE_END
+SENTENCE_START i'm wiling to extend nics to private sellers as voluntary. SENTENCE_END
+SENTENCE_START take it or leave it, because it isn't going to be made mandatory. SENTENCE_END
+SENTENCE_START not gonna happen. SENTENCE_END
+SENTENCE_START period. SENTENCE_END
+Parsed 21 sentences.
