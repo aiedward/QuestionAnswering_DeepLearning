@@ -25,9 +25,9 @@ sentence_end_token = "SENTENCE_END"
 
 # Read the data and append SENTENCE_START and SENTENCE_END tokens
 print ("Reading CSV file...")
-with open('info2.csv', 'r') as f:
+with open('Data/datos.csv', 'r') as f:
     reader = csv.reader(f, skipinitialspace=True)
-    reader.__next__()
+    #reader.__next__()
     # Split full comments into sentences
     sentences = itertools.chain(*[nltk.sent_tokenize(x[0].lower()) for x in reader])
     # Append SENTENCE_START and SENTENCE_END
@@ -45,7 +45,12 @@ word_freq = nltk.FreqDist(itertools.chain(*tokenized_sentences))
 
 # Get the most common words and build index_to_word and word_to_index vectors
 vocab = word_freq.most_common(vocabulary_size-1)
-index_to_word = [x[0] for x in vocab]
+vocab1= list()
+for one in vocab:
+	if (len(one[0])>2):
+		vocab1.append(one[0])		
+
+index_to_word = [x for x in vocab1]
 index_to_word.append(unknown_token)
 word_to_index = dict([(w,i) for i,w in enumerate(index_to_word)])
 print("---------------------------------------------------------------------------")
