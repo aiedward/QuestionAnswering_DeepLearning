@@ -1,0 +1,206 @@
+What concept did philosophers  antiquity use  study simple machines?
+What was the belief that maintaining motion required force?
+Who had mathmatical insite?
+How long did  take  improve  Sir Isaac Newton' laws  motion?
+Who develped the theory  relativity?
+What has partical physics made  describe sub-atomic forces?
+What are the exchanged particles predicted  the standard Model?
+What  the strongest main interaction?
+What  the weakest main interaction?
+What are weak and electromatic forces expressions ?
+Who provided  philosophical discussion  force?
+What was the concept  force  integral part ?
+How many elements did Aristotle believe the terrestrial sphere   made  ?
+Where did Aristotle believe the natural place for earth and water elements?
+What did Aristotle refer  forced motion ?
+When were the shortcomings  Aristotle' physics overcome?
+Whose work  corrected Aristotle' physics  the seventeenth century?
+What did objects  forced motion contain according  the late Medieval idea that influence Aristotle?
+Who experimented  rolling stones and canonballs down  steep incline?
+What force acted  bodies  retard their velocity?
+Whose First Law  Motion says that unless acted upon  forces, objects would continue  move   constant velocity?
+What insight  Galileo was associated with constant velocity?
+Who proposed that innate intertial  the natural state  objects?
+What law connects relative velocities with inertia?
+What are the laws  physics  Galileo,  reference  objest  motion and rest?
+What doesn' change from being  rest  movement   constant velocity?
+What path does  ball thrown  and down   moving vehicle take when seen   outside observer? 
+What sate are things inside   moving vehicle  seen    person inside the vehicle?
+What applies  equally  constant velocity motion   does  rest.
+What concept explains why objects continue  constant motion?
+What makes day length constant  Earth?
+Who explained that inertial reference frames equaled reference frames subject  constant acceleration?
+What  astronaughts experience while  free-fall?
+What was the basis mentioned for the develpment  the general theory  relativity?
+What describes the proportionality  acceleration  force and mass?
+What kind  measurements define accelerlations?
+What has  equivalence between mass and space-time?
+What  missing  theory  quantum gravity?
+ Newton' second law, what are the units  mass and force  relation  microscales?
+When forces are from the presence  differnet objects, what law gives symmetry?
+What law staes that forces are interactions between bodies?
+What kind  force does not exist under Newton' third law?
+What  the equality  forces between two objects exerting force  each other??
+What experiences acceleration when external force  applied   system?
+ what kind  system  particles are there  unbalanced iinternal forces?
+What  the magnitude  force divided  when external force  added?
+What does pushing and pulling perceptions provide for describing forces?
+What  used  quantify the intuitive undestanding  forces?
+What offers  conceptual definition  force?
+How are laboratory measurements  forces determined?
+How are forces classified with regard  push and pull strengt?
+What physical quantities  not have direction?
+How  you avoid problems when determining forces involved   object from two  more sources?
+ you  not know both magnitude and direction  two forces   object, what would you call that situation?
+How  you determine the acceleration   rope when two people are pulling ?
+ what conditions were forces first measured historically?
+What  forces have with regard  additive quantities?
+What  the resultant force called when two forces act   particle?
+When forces are acting   extended body, what  you need  account for motion effects?
+What geometric shape  used  equations  determine net force?
+Whwn forces are  right ngles  each other what can they  broken down ?
+  force  pointing horizontally  the northeast, how many forces can you split the force into?
+What  you get when you figure the sum  forces with vector addition?
+What are the independant components   vector sum that has been determined  scalar addition  individual vectors?
+What can orthogonal forces  when there are three components with two  right angles  each other?
+What can keep  object from moving when   being pushed   surface?
+What  generated between  surface and  object that  being pushed?
+Static friction balances what force when there   movement   object   surface?
+What makes static friction    down  responce  contact characteristics between  object and the surface   ?
+What can scales and spring balances measure between two forces  using static equilibrium?
+What force acts   object suspended   spring scale  addition  gravity?
+What equals the spring reaction force   object suspended   spring reaction scale? 
+Objects  constant density are proportional  volume  what force  define standard weights?.
+Who expounded the Three Laws  Motion?
+Who first described dynamic equilibrium?
+What does motion   constant velocity equal?
+Who had the idea   natural state for objects  rest?
+Where will  canonball dropped from the crow' nest   ship land according  Aristotle?
+Where does  canonball dropped from the crow' nest   ship actually land?
+What occurs when traveling across  surface   constant velocity with regard  friction?
+What directly opposes the force applied  move  object across  surface?
+What has  accounted for that causes  net force being the cause  constant velocity motion?
+Who thought that applied force caused movement   object regardless  non-zero velocity?
+What equation currently decribes the physics  force.
+What equation desribed the physics  force before the current Schrodinger equation?
+How are the forces derived from fields treated similarly ?
+What type  measurements result under Schrodinger equations when using operators instead  Newtonian variables?
+What notion keeps ' meaning through both Netonian and Schrodinger physics equations?
+What  the intrisic angular variable called when particles act upon one another?
+What  the principle about relating spin and space variables?
+What value does the seperating into fermions and bosons depend?
+ the apparant force  two fermions  attractive, what  the spin function?
+ the apparant force  two fermions  repulsive, what  the spin function?
+How are the particle forces and accelerations explained   gauge bosons exchange?
+What  the redundant concept coming from momentum conservation?
+What  more fundamental than force  quanton field theory?
+What diagrams are used  simplify particle interactions   fundamental level?
+Matter particles are shown  what kind  lines   Feynman diagram?
+How many interactions are all  the universal forces based ?
+What nuclear forces only act  short distances?
+What force acts between electric charges?
+What  gravitational forces act between?
+What prohibits atoms from passing through each other?
+Who formed the universal theory  gravitation?
+ what century was quantum mechanics made? 
+What kind  self-consistent models are physicists trying  make that would create  theory  everything?
+What type  physics model did Einstein fail  make?
+Who identified gravity   force?
+Who came  with the concept that falling objects fell  the same speed regardless  weight?
+How fast  objects fall  Earth?
+Where was the measurment for the standard gravity  Earth taken?
+What   object' mass proportional   the surface  the Earth?
+How might gravity effects  observed differently according  Newton?
+What could  attributed  gravity acceleration around the Earth?
+What  gravitational acceleration proportional ?
+What  included along with gravitational acceration, and mass  the Earth   formula about rotation about the Earth?
+What  used  figure the relative strengh  gravity?
+Who made the first  measure value  the Newton Universal Gravitation Constant?
+When was the first measurement  the value  the Newton Universal Gravitation Constant?
+Who figured out that his law  gravity had   universal?
+What planet seemed  buck Newton' gravitational laws?
+What planet did astrophysisist predict  explain the problems with Mercury?
+What theory accounted for the Mercury problem?
+Who came  with the theory  relativity?
+Who first showed that Newton' Theory  Gravity was not  correct  another theory?
+What theory best explains gravity?
+What space-time path  seen   curved line  space?
+What  the derivative   object' changing momentum called?
+ what sense must you  observing the curvature  space-time?
+What   the time rate  change  electric charge?
+What magnetic and electric force acts   charge?
+What  the law named that defines  charge moving through  magnetic field?
+Whatare the electrostatic and magnetic force awritten  the sum ?
+Who first fully explained the origins  magnetic and electric fields?
+When did the origins  magnetic and electric fields occur?
+How many scalar equations were formed into  set  James Maxwell?
+How many vector equations did Heaviside and Gibbs reformilate Maxwell'  scalar equtions into?
+Who discovered that magnetic and electric could self-generate?
+What was dificult  reconcile the photoelectric effect and the missing ultraviolet catastrophe?
+What was used  create  new electromagnetic theory  reconcile the troubles with electromagnetic theory   used  stand?
+What did electromagnetic theory  finally lead ?
+What are the wave-particles called that mediate all electromagnetic phenomena?
+What  QED short for?
+What  often misunderstood  the cause  matter rigidity?
+What actually causes rigidity  matter?
+What  needed  pack electrons densely together?
+How  the Pauli exclusion priciple manifested  the macro world?
+What  often misunderstood  the cause  matter rigidity?
+What actually causes rigidity  matter?
+What  needed  pack electrons densely together?
+How  the Pauli exclusion priciple manifested  the macro world?
+What does stong force act upon?
+What can  seen between hadrons?
+What  the force between nucleons?
+How are nuclear forces transmitted?
+What  the term for the lack  obsevable free quarks?
+What does the  and  boson exchange create?
+What  the observable effect   and  boson exchange?
+What  the effect  beta decay?
+How many times less  the strenght  the weak field compared  the strong?
+ what temperature  weak and electromagnetic forces appear the same?
+What  the repulsive force  close range atom interaction?
+What occurs when electron clouds overlap from different atoms?
+What causes Pauli repulsion?
+What  the force that causes rigid strength  structures?
+What can  used  model tension forces?
+What  you use  let idea strings switch direction?
+ what way  idea strings transmit tesion forces?
+What  the final effect  adding more and more idea strings   load?
+What can increase the tension force   load?
+What did Newton' mechanics affect?
+What didn' Newton' mechanics affext?
+ what kind  fluid are pressure differences caused  direction  forces over gradients?
+What may  force  one part   object affect?
+What does matter actually have that Newtonian mechanics doesn' address?
+What causes strain  structures?
+What  used  calculate cross section area  the volume   object?
+What are associated with normal forces?
+What includes pressure terms when calculating area  volume?
+What  the force equivalent  torque compared  angular momentum?
+What would change the rotational inertia   body under Newton' First Law  Motion?
+ calculate instant angular acceleration   rigid body what would you use?
+Where does centripetal force ?
+How  centripetal forces act  relation  vectors  velocity?
+What force changes  objects direction  travel?
+What  another word for centripetal force?
+What  resposible for speeding   slowing down  object?
+What  the only form potential energy can change into?
+What  the only form kinetic energy can change into?
+What  preserved   closed system  forces when acted upon?
+What  the force between two locations related ?
+What  the force called rgarding  potential field between two locations?
+What  sometimes impossible  model?
+Why are some forces due  that are impossible  model?
+What  electrostatic gradiient potentials create?
+Tension, compression, and drag are what kind  forces?
+ what treatment are nonconservative and conservative forces described?
+What changes macroscopic closed system energies?
+What  the exchange  heat associated with?
+What  the law  thermodynamics associated with closed system heat exchange?
+What makes energy changes   closed system?
+What  the metric term less used than the Newton?
+What  the kilogram-force sometimes reffered  ?
+What   very seldom used unit  mass  the metric system?
+What seldom used term   unit  force equal  1000 pound   force?
+What  the seldom used force unit equal  one thousand newtons?
