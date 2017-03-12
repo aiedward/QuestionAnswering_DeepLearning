@@ -16,7 +16,7 @@ from rnn_numpy import RNNNumpy
 
 
 
-_VOCABULARY_SIZE = int(os.environ.get('VOCABULARY_SIZE', '75'))
+_VOCABULARY_SIZE = int(os.environ.get('VOCABULARY_SIZE', '1600'))
 _HIDDEN_DIM = int(os.environ.get('HIDDEN_DIM', '80'))
 _LEARNING_RATE = float(os.environ.get('LEARNING_RATE', '0.005'))
 _NEPOCH = int(os.environ.get('NEPOCH', '100'))
@@ -53,7 +53,7 @@ sentence_end_token = "SENTENCE_END"
 
 # Read the data and append SENTENCE_START and SENTENCE_END tokens
 print "Reading CSV file..."
-with open('data/ejemplo.csv', 'rb') as f:
+with open('data/context-data.csv', 'rb') as f:
     reader = csv.reader(f, skipinitialspace=True)
     reader.next()
     # Split full comments into sentences
@@ -143,7 +143,7 @@ print ("Colocar al menos 8000, tam veector, vocabulary_size")
 print (vocabulary_size)
 model = RNNTheano(vocabulary_size, hidden_dim=50)
 # losses = train_with_sgd(model, X_train, y_train, nepoch=50)
-save_model_parameters_theano('./data/trained-model-theano.npz', model)
+#save_model_parameters_theano('./data/trained-model-theano.npz', model)
 load_model_parameters_theano('./data/trained-model-theano.npz', model)            
 
 
@@ -154,9 +154,9 @@ def generate_sentence(model,word):
     predict = model.forward_propagation(wordFind)
     samples = np.random.multinomial(1, predict[-1])
     sampled_word = np.argmax(samples)
-    print("Prediccion ")
+    print("Prediccion : ")
     print(sampled_word)
-    nextWord=index_to_word[sampled_word]
+    #nextWord=index_to_word[sampled_word]
     print (index_to_word[sampled_word])
     res=[]
     # We start the sentence with the start t
