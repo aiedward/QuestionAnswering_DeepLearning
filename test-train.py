@@ -12,9 +12,9 @@ from datetime import datetime
 from utils import *
 from rnn_theano import RNNTheano
 
-_VOCABULARY_SIZE = int(os.environ.get('VOCABULARY_SIZE', '8000'))
+_VOCABULARY_SIZE = int(os.environ.get('VOCABULARY_SIZE', '1539'))
 _HIDDEN_DIM = int(os.environ.get('HIDDEN_DIM', '80'))
-_LEARNING_RATE = float(os.environ.get('LEARNING_RATE', '0.003'))
+_LEARNING_RATE = float(os.environ.get('LEARNING_RATE', '0.001'))
 _NEPOCH = int(os.environ.get('NEPOCH', '100'))
 _MODEL_FILE = os.environ.get('MODEL_FILE')
 
