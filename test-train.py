@@ -14,8 +14,8 @@ from rnn_theano import RNNTheano
 
 _VOCABULARY_SIZE = int(os.environ.get('VOCABULARY_SIZE', '8000'))
 _HIDDEN_DIM = int(os.environ.get('HIDDEN_DIM', '80'))
-_LEARNING_RATE = float(os.environ.get('LEARNING_RATE', '0.005'))
-_NEPOCH = 8
+_LEARNING_RATE = float(os.environ.get('LEARNING_RATE', '0.003'))
+_NEPOCH = int(os.environ.get('NEPOCH', '100'))
 _MODEL_FILE = os.environ.get('MODEL_FILE')
 
 def train_with_sgd(model, X_train, y_train, learning_rate=0.005, nepoch=1, evaluate_loss_after=5):
