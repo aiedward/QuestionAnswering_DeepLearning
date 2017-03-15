@@ -6,6 +6,8 @@ import operator
 import numpy as np
 import nltk
 import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 import os
 import time
 from datetime import datetime

@@ -27,7 +27,7 @@ sentence_end_token = "SENTENCE_END"
 
 # Read the data and append SENTENCE_START and SENTENCE_END tokens
 print ("Reading CSV file...")
-with open('data/preguntasyrespuestas.csv', 'r') as f:
+with open('preguntasyrespuestas.csv', 'r') as f:
     reader = csv.reader(f, skipinitialspace=True)
     #reader.__next__()
     # Split full comments into sentences
@@ -35,7 +35,7 @@ with open('data/preguntasyrespuestas.csv', 'r') as f:
     # Append SENTENCE_START and SENTENCE_END
     sentences = ["%s %s %s" % (sentence_start_token, x, sentence_end_token) for x in sentences]
     for x in sentences:
-    	print(x)
+        print(x)
 print ("Parsed %d sentences." % (len(sentences)))
     
 # Tokenize the sentences into words
@@ -49,8 +49,8 @@ word_freq = nltk.FreqDist(itertools.chain(*tokenized_sentences))
 vocab = word_freq.most_common(vocabulary_size-1)
 vocab1= list()
 for one in vocab:
-	if (len(one[0])>2):
-		vocab1.append(one[0])		
+    if (len(one[0])>2):
+        vocab1.append(one[0])       
 
 index_to_word = [x for x in vocab1]
 index_to_word.append(unknown_token)
@@ -59,13 +59,13 @@ print("-------------------------------------------------------------------------
 print("index_to_world:")
 print("---------------------------------------------------------------------------")
 for a in index_to_word:
-	print(a)
+    print(a)
 print("---------------------------------------------------------------------------")
 print("---------------------------------------------------------------------------")
 print("world_to_index:")
 print("---------------------------------------------------------------------------")
 for a,b in word_to_index.items():
-	print (a,b)
+    print (a,b)
 print("---------------------------------------------------------------------------")
 #print "Using vocabulary size %d." % vocabulary_size
 #print "The least frequent word in our vocabulary is '%s' and appeared %d times." % (vocab[-1][0], vocab[-1][1])
@@ -75,6 +75,8 @@ for i, sent in enumerate(tokenized_sentences):
     tokenized_sentences[i] = [w if w in word_to_index else unknown_token for w in sent]
 
 # Create the training data
+X_train = np.asarray([[word_to_index[w] for w in sent[:-1]] for sent in tokenized_sentences])
+
 arreglo = []
 x = []
 y = []
@@ -94,16 +96,16 @@ for sent in tokenized_sentences:
 
 print("---------------------------------------------------------------------------")
 
-X_train = np.asarray(x)
-y_train = np.asarray(y)
+entrada = np.asarray(x)
+salida = np.asarray(y)
 
 print("---------------------------------------------------------------------------")
 print("E N T R A D A")
 print("---------------------------------------------------------------------------")
-for a in X_train:
+for a in entrada:
     print (a)
 print("---------------------------------------------------------------------------")
 print("S A L I D A")
 print("---------------------------------------------------------------------------")
-for a in y_train:
+for a in salida:
     print (a)
