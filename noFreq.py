@@ -49,7 +49,7 @@ sentence_end_token = "SENTENCE_END"
 
 # Read the data and append SENTENCE_START and SENTENCE_END tokens
 print "Reading CSV file..."
-with open('data/ejemplo.csv', 'rb') as f:
+with open('data/preguntasyrespuestas.csv', 'r') as f:
     reader = csv.reader(f, skipinitialspace=True)
     reader.next()
     # Split full comments into sentences
@@ -85,23 +85,47 @@ print(len(word_to_index))
 
 
 # Create the training data
+arreglo = []
+x = []
+y = []
+print("---------------------------------------------------------------------------")
+par = 0;
+for sent in tokenized_sentences:
+    arreglo = []
+    for w in sent[:-1]:
+        if w in word_to_index:
+            arreglo.append(word_to_index[w])
+    print arreglo
+    if par % 2 == 0:
+        x.append(arreglo)
+    else:
+        y.append(arreglo)
+    par = par + 1
 
-X_train = np.asarray([[word_to_index[w] for w in sent[:-1]] for sent in tokenized_sentences])
-print("X_train")
-print(X_train)
+print("---------------------------------------------------------------------------")
 
-y_train = np.asarray([[word_to_index[w] for w in sent[1:]] for sent in tokenized_sentences])
-print("Y_train")
-print(y_train)
+X_train = np.asarray(x)
+y_train = np.asarray(y)
+
+print("---------------------------------------------------------------------------")
+print("E N T R A D A")
+print("---------------------------------------------------------------------------")
+for a in X_train:
+    print (a)
+print("---------------------------------------------------------------------------")
+print("S A L I D A")
+print("---------------------------------------------------------------------------")
+for a in y_train:
+    print (a)
 
 
-#model = RNNTheano(vocabulary_size, hidden_dim=_HIDDEN_DIM)
-#t1 = time.time()
-#model.sgd_step(X_train[10], y_train[10], _LEARNING_RATE)
-#t2 = time.time()
-#print "SGD Step time: %f milliseconds" % ((t2 - t1) * 1000.)
+model = RNNTheano(vocabulary_size, hidden_dim=_HIDDEN_DIM)
+t1 = time.time()
+model.sgd_step(X_train[10], y_train[10], _LEARNING_RATE)
+t2 = time.time()
+print "SGD Step time: %f milliseconds" % ((t2 - t1) * 1000.)
 
 if _MODEL_FILE != None:
     load_model_parameters_theano(_MODEL_FILE, model)
 
-#train_with_sgd(model, X_train, y_train, nepoch=_NEPOCH, learning_rate=_LEARNING_RATE)
+train_with_sgd(model, X_train, y_train, nepoch=_NEPOCH, learning_rate=_LEARNING_RATE)
