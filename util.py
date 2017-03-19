@@ -68,22 +68,24 @@ for a in range(0, 1):
 			print("------------------------------------------------------------------")
 			print("R E S P U E S T A S")
 			print("------------------------------------------------------------------")
-			algo = ""
+			algo = set()
 			count = 0
+			ora_comp = ""
 			for d in range(0, len(data["data"][a]["paragraphs"][b]["qas"][c]["answers"])):
 				print(data["data"][a]["paragraphs"][b]["qas"][c]["answers"][d]["answer_start"])
 				print(data["data"][a]["paragraphs"][b]["qas"][c]["answers"][d]["text"])
 				alguito = str(data["data"][a]["paragraphs"][b]["qas"][c]["answers"][d]["text"])
 				print ("algo vale: ", algo)
-				if(algo != alguito):
+				print ("alguito vale: ", alguito)
+				if(alguito not in algo ):
 					if (count == 0):
-						algo += alguito
-					else:
-						algo += " "
-						algo += alguito
-			csvwriterall.writerow([algo])
-			csvwriterrespuestas.writerow([algo])
-			csvwriterpreguntasyrespuestas.writerow([algo])
+						algo.add(alguito)
+						++count
+			ora_comp += ', '.join(algo)
+			print ("La oracion completa es, ", ora_comp)
+			csvwriterall.writerow([ora_comp])
+			csvwriterrespuestas.writerow([ora_comp])
+			csvwriterpreguntasyrespuestas.writerow([ora_comp])
 			print("------------------------------------------------------------------")
 			print("R E S P U E S T A S")
 			print("------------------------------------------------------------------")
