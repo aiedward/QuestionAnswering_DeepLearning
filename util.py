@@ -74,15 +74,17 @@ for a in range(0, 1):
 			for d in range(0, len(data["data"][a]["paragraphs"][b]["qas"][c]["answers"])):
 				print(data["data"][a]["paragraphs"][b]["qas"][c]["answers"][d]["answer_start"])
 				print(data["data"][a]["paragraphs"][b]["qas"][c]["answers"][d]["text"])
-				alguito = str(data["data"][a]["paragraphs"][b]["qas"][c]["answers"][d]["text"])
+				alguito = data["data"][a]["paragraphs"][b]["qas"][c]["answers"][d]["text"]
 				print ("algo vale: ", algo)
+#				alguito.replace("'", "")
+#				[x.replace('"', '') for x in alguito.strip().split(',')]
 				print ("alguito vale: ", alguito)
 				if(alguito not in algo ):
 					if (count == 0):
 						algo.add(alguito)
 						++count
 			ora_comp += ', '.join(algo)
-			print ("La oracion completa es, ", ora_comp)
+			print (ora_comp)
 			csvwriterall.writerow([ora_comp])
 			csvwriterrespuestas.writerow([ora_comp])
 			csvwriterpreguntasyrespuestas.writerow([ora_comp])
