@@ -69,11 +69,18 @@ for a in range(0, 1):
 			print("R E S P U E S T A S")
 			print("------------------------------------------------------------------")
 			algo = ""
+			count = 0
 			for d in range(0, len(data["data"][a]["paragraphs"][b]["qas"][c]["answers"])):
 				print(data["data"][a]["paragraphs"][b]["qas"][c]["answers"][d]["answer_start"])
 				print(data["data"][a]["paragraphs"][b]["qas"][c]["answers"][d]["text"])
-				algo += data["data"][a]["paragraphs"][b]["qas"][c]["answers"][d]["text"]
-				algo += " | "
+				alguito = str(data["data"][a]["paragraphs"][b]["qas"][c]["answers"][d]["text"])
+				print ("algo vale: ", algo)
+				if(algo != alguito):
+					if (count == 0):
+						algo += alguito
+					else:
+						algo += " "
+						algo += alguito
 			csvwriterall.writerow([algo])
 			csvwriterrespuestas.writerow([algo])
 			csvwriterpreguntasyrespuestas.writerow([algo])
