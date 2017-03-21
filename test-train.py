@@ -6,6 +6,8 @@ import operator
 import numpy as np
 import nltk
 import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 import os
 import time
 from datetime import datetime
@@ -71,7 +73,7 @@ sentence_end_token = "SENTENCE_END"
 
 # Read the data and append SENTENCE_START and SENTENCE_END tokens
 print "Reading CSV file..."
-with open('data/context-data.csv', 'rb') as f:
+with open('data/preguntasyrespuestas.csv', 'rb') as f:
     reader = csv.reader(f, skipinitialspace=True)
     reader.next()
     # Split full comments into sentences
@@ -103,9 +105,32 @@ for i, sent in enumerate(tokenized_sentences):
     tokenized_sentences[i] = [w if w in word_to_index else unknown_token for w in sent]
 
 # Create the training data
-X_train = np.asarray([[word_to_index[w] for w in sent[:-1]] for sent in tokenized_sentences])
-y_train = np.asarray([[word_to_index[w] for w in sent[1:]] for sent in tokenized_sentences])
+# Create the training data
+arreglo = []
+x = []
+y = []
+print("---------------------------------------------------------------------------")
+par = 0;
+for sent in tokenized_sentences:
+    arreglo = []
+    for w in sent[:-1]:
+        if w in word_to_index:
+            arreglo.append(word_to_index[w])
+    print arreglo
+    if par % 2 == 0:
+        x.append(arreglo)
+    else:
+        y.append(arreglo)
+    par = par + 1
 
+print("---------------------------------------------------------------------------")
+
+<<<<<<< HEAD
+=======
+X_train = np.asarray(x)
+y_train = np.asarray(y)
+
+>>>>>>> be8a7d6c64386c9c4acb7a39752a0ec4e877d42c
 np.random.seed(10)
 model = RNNTheano(vocabulary_size, hidden_dim=_HIDDEN_DIM)
 t1 = time.time()
@@ -155,6 +180,7 @@ for i in range(1):
     # We want long sentences, not sentences with one or two words
     while len(sent) < senten_min_length:
         sent = generate_sentence(model,"word")
+<<<<<<< HEAD
     print " ".join(sent)
 
 
@@ -168,3 +194,6 @@ for i in range(1):
 
 
 
+=======
+    print " ".join(sent)
+>>>>>>> be8a7d6c64386c9c4acb7a39752a0ec4e877d42c
