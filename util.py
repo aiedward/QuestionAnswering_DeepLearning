@@ -88,7 +88,8 @@ for a in range(0, 1):
 			print("------------------------------------------------------------------")
 			print("R E S P U E S T A S")
 			print("------------------------------------------------------------------")
-			algo = set()
+			#algo = set()
+			algo = ""
 			count = 0
 			ora_comp = ""
 			csvwritertextomaspreguntasyrespuestas.writerow([textomaspreguntas])
@@ -100,16 +101,21 @@ for a in range(0, 1):
 #				alguito.replace("'", "")
 #				[x.replace('"', '') for x in alguito.strip().split(',')]
 				print ("alguito vale: ", alguito)
-				if(alguito not in algo ):
+				if(alguito not in algo):
 					if (count == 0):
-						algo.add(alguito)
+						algo = alguito
 						++count
-			ora_comp += ', '.join(algo)
-			print (ora_comp)
+					else:
+						algo += ", "
+						algo = alguito
+				else:
+					if(len(alguito) > algo):
+						algo = alguito
+
 #			csvwriterall.writerow([ora_comp])
 #			csvwriterrespuestas.writerow([ora_comp])
-			csvwriterpreguntasyrespuestas.writerow([ora_comp])
-			csvwritertextomaspreguntasyrespuestas.writerow([ora_comp])
+			csvwriterpreguntasyrespuestas.writerow([algo])
+			csvwritertextomaspreguntasyrespuestas.writerow([algo])
 			print("------------------------------------------------------------------")
 			print("R E S P U E S T A S")
 			print("------------------------------------------------------------------")
