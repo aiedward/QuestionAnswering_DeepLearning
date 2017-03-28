@@ -4,6 +4,7 @@ import itertools
 import operator
 import numpy as np
 import nltk
+import pprint as pp
 #nltk.download()
 import sys
 reload(sys)
@@ -25,15 +26,23 @@ unknown_token = "UNKNOWN_TOKEN"
 sentence_start_token = "SENTENCE_START"
 sentence_end_token = "SENTENCE_END"
 
+
+def bitLen(int_type):
+    length = 0
+    while (int_type):
+        int_type >>= 1
+        length += 1
+    return(length)
+
 # Read the data and append SENTENCE_START and SENTENCE_END tokens
 print ("Reading CSV file...")
-with open('preguntasyrespuestas.csv', 'r') as f:
+with open('data/textomaspreguntasyrespuestas.csv', 'r') as f:
     reader = csv.reader(f, skipinitialspace=True)
     #reader.__next__()
     # Split full comments into sentences
     sentences = itertools.chain(*[nltk.sent_tokenize(x[0].lower()) for x in reader])
     # Append SENTENCE_START and SENTENCE_END
-    sentences = ["%s %s %s" % (sentence_start_token, x, sentence_end_token) for x in sentences]
+    sentences = ["%s" % (x) for x in sentences]
     for x in sentences:
         print(x)
 print ("Parsed %d sentences." % (len(sentences)))
@@ -81,17 +90,35 @@ arreglo = []
 x = []
 y = []
 print("---------------------------------------------------------------------------")
-par = 0;
+par = 0
+anterior = 0
+mayor = 0
 for sent in tokenized_sentences:
     arreglo = []
-    for w in sent[:-1]:
+    for w in sent:
         if w in word_to_index:
             arreglo.append(word_to_index[w])
-    print arreglo
+        if len(sent)>=116:
+            print("A LE RTA AAAAAAAAAAAAAAAAAAAAAAAAAaa")
+    while (len(arreglo)< 116) :
+        a=word_to_index[unknown_token]
+        arreglo.append(a)
     if par % 2 == 0:
         x.append(arreglo)
     else:
-        y.append(arreglo)
+        arreglo.sort()
+        arreglo = [arreglo[next((i for i, x in enumerate(arreglo) if x), None)], arreglo[-1]]
+        cero=word_to_index[unknown_token]
+        posIni= arreglo[0]
+        PosFin= arreglo[1]
+        while ((len(y)< 116)):
+            if((len(y)< 114)):
+                y.append(cero)
+            else:
+                y.append(posIni)
+                y.append(PosFin)
+                break
+        pp.pprint(y)
     par = par + 1
 
 print("---------------------------------------------------------------------------")
@@ -109,3 +136,59 @@ print("S A L I D A")
 print("---------------------------------------------------------------------------")
 for a in salida:
     print (a)
+
+print("---------------------------------------------------------------------------")
+print(" P A R A   V E C T O R   X ")
+print("---------------------------------------------------------------------------")
+print("---------------------------------------------------------------------------")
+print(" N O R M A L I Z A C I O N   D E   V E C T O R E S ")
+print("---------------------------------------------------------------------------")
+vectoresfusionados = zip(entrada, salida)
+arregloparanormalizar =[]
+for x in vectoresfusionados:
+    arregloparanormalizar.append(list(itertools.chain.from_iterable(x)))
+arreglito1 = np.asarray(arregloparanormalizar)
+pp.pprint(arreglito1)
+
+print("---------------------------------------------------------------------------")
+print(" A R R E G L O   D E   V E C T O R E S   S U M A D O S ")
+print("---------------------------------------------------------------------------")
+
+vectoresnormalizados =[]
+for x in arregloparanormalizar:
+    vectoresnormalizados.append(sum(x))
+arreglito2 = np.asarray(vectoresnormalizados)
+print arreglito2
+
+print("---------------------------------------------------------------------------")
+print(" N O R M A L I Z A C I O N   D E   V E C T O R E S   E N T R E   C E R O  Y   U N O ")
+print("---------------------------------------------------------------------------")
+
+vectoresrenormalizados = []
+for y in range(0,len(vectoresnormalizados)):
+    vectoresrenormalizados.append([x / float(vectoresnormalizados[y]) for x in arregloparanormalizar[y]])
+arreglito3 = np.asarray(vectoresrenormalizados)
+pp.pprint(arreglito3)
+
+print("---------------------------------------------------------------------------")
+print(" P A R A   V E C T O R   Y ")
+print("---------------------------------------------------------------------------")
+
+mayorlongitudx = 0
+for x in range(0, len(entrada)):
+    if len(entrada[x]) > mayorlongitudx:
+        mayorlongitudx = len(entrada[x])
+
+doublexlength = mayorlongitudx*2
+print("Maxima longitud en bits de los textos+preguntas", mayorlongitudx)
+
+#mayorlongitudy = 0
+#for x in range(0, len(entrada)):
+#    if len(salida[x]) > mayorlongitudy:
+#        mayorlongitudy = len(salida[x])
+
+bitsdemayorlongitudx = bitLen(mayorlongitudx)
+print("Maxima longitud en bits de los textos+preguntas", bitsdemayorlongitudx)
+doublexlength = bitsdemayorlongitudx*2
+print("el doble de la Maxima longitud en bits de los textos+preguntas", doublexlength)
+#bitsdemayorlongitudy = bitLen(mayorlongitudy)
