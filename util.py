@@ -26,7 +26,7 @@ csvwritertextomaspreguntasyrespuestas = csv.writer(textomaspreguntasyrespuestas_
 
 count = 0
 
-with open('data/dev-original.json') as data_file:    
+with open('data/dev-v1.1.json') as data_file:    
 	data = json.load(data_file)
 print("Nro de Contextos:", len(data["data"]))
 
@@ -39,7 +39,7 @@ for a in range(0, 1):
 	print("Nro de Parrafos:", len(data["data"][a]["paragraphs"]))
 	print("Nro de COntextos:", len(data["data"]))
 	textomaspreguntas = ""
-	for b in range(0, 50):
+	for b in range(0, 1):
 		print("------------------------------------------------------------------")
 		print(" \n P A R R A F O S -")
 		print("------------------------------------------------------------------")
